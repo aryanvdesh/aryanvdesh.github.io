@@ -1,0 +1,175 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* particleground demo */
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #ffffe4;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  line-height: 1.3;
+  -webkit-font-smoothing: antialiased;
+}
+
+#particles {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#intro {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  padding: 0 10px;
+  width: 100%;
+  text-align: center;
+}
+h2 {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 120;
+  color: #000000;
+  letter-spacing: 0.05em;
+}
+h1 {
+  margin: px;
+  font-size: 50px;
+  font-weight: 120;
+  line-height: 1.5;
+  text-align: left;
+  color: #000000;
+  background: none;
+  font-family: 'EB Garamond', serif; */
+}
+
+p {
+  margin: 0 0 30px 0;
+  color: #000000;
+  font-size: 24px;
+  font-family: 'EB Garamond', serif;
+}
+
+@media only screen and (max-width: 1000px) {
+  h1 {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 100px) {
+  h1 {
+    font-size: 15px;
+  }
+  h1::after {
+    height: 8px;
+  }
+}
+
+@media only screen and (max-width: 100px) {
+  #intro {
+    padding: 0 10px;
+  }
+  h1 {
+    font-size: 15px;
+  }
+  h1::after {
+    height: 6px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .btn {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 100px) {
+  h1 {
+    font-size: 15px;
+  }
+  h1::after {
+    height: 4px;
+  }
+}
+/* The navigation bar */
+.navbar {
+  font-family: 'EB Garamond', serif;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0);
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: right;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+::selection {
+  color: #fffff8;
+  background: rgba(0, 0, 0, 0.85);
+}
