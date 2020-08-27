@@ -41,31 +41,3 @@ body {
       max-width: 100%;
     }
   }
-
-  .navbar {
-    font-family: 'EB Garamond', serif;
-    color: #ffffe4;
-    bottom: 0%;
-    width: 100%; /* Full width */
-  }
-
-  /* Links inside the navbar */
-.navbar1 a {
-  float: right;
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* Change background on mouse-over */
-.navbar1 a:hover {
-  text-decoration: underline;
-  color: black;
-}
-
-::selection {
-  color: #fffff8;
-  background: rgba(0, 0, 0, 0.85);
-}
