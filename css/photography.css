@@ -42,32 +42,29 @@ body {
     }
   }
 
-  /* The navigation bar */
-.navbar1 {
-  font-family: 'EB Garamond', serif;
-  overflow: hidden;
-  background-color: rgba(0,0,0,0);
-  bottom: 0%;
-  width: 100%; /* Full width */
-}
+  .navbar {
+    font-family: 'EB Garamond', serif;
+    color: #ffffe4;
+    width: 100%; /* Full width */
+  }
 
-/* Links inside the navbar */
-.navbar1 a {
-  float: right;
-  display: block;
-  color: #000000;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+  /* Links inside the navbar */
+  .navbar a {
+    float: right;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
 }
 
 /* Change background on mouse-over */
-.navbar1 a:hover {
-  text-decoration: underline;
-  color: black;
+  .navbar a:hover {
+    text-decoration: underline;
+    color: black;
 }
 
-::selection {
-  color: #fffff8;
-  background: rgba(0, 0, 0, 0.85);
+  ::selection {
+    color: #fffff8;
+    background: rgba(0, 0, 0, 0.85);
 }
