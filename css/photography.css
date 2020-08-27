@@ -25,46 +25,31 @@ body {
     vertical-align: middle;
     width: 100%;
   }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
-    }
-    }
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
 
   .navbar {
     font-family: 'EB Garamond', serif;
     color: #ffffe4;
+    bottom: 0%;
     width: 100%; /* Full width */
   }
 
   /* Links inside the navbar */
-  .navbar a {
-    float: right;
-    display: block;
-    color: #000000;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.navbar1 a {
+  float: right;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
 }
 
 /* Change background on mouse-over */
-  .navbar a:hover {
-    text-decoration: underline;
-    color: black;
+.navbar1 a:hover {
+  text-decoration: underline;
+  color: black;
 }
 
-  ::selection {
-    color: #fffff8;
-    background: rgba(0, 0, 0, 0.85);
+::selection {
+  color: #fffff8;
+  background: rgba(0, 0, 0, 0.85);
 }
