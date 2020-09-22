@@ -9,7 +9,6 @@ body {
   .row {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 4px;
     margin: 1em;
   }
   
@@ -17,11 +16,10 @@ body {
   .column {
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 0 1px;
   }
   
   .column img {
-    margin-top: 8px;
     vertical-align: middle;
     width: 100%;
   }
@@ -41,3 +39,65 @@ body {
       max-width: 100%;
     }
   }
+
+  /* progressive image CSS */
+.progressive {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  /*outline: none; */
+}
+
+.progressive img {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  border: 2px solid #ffffe4;
+}
+
+.progressive img.preview {
+  filter: blur(2vw);
+  transform: scale(1.05);
+}
+
+.progressive img.reveal {
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: progressiveReveal 0.5s linear;
+}
+
+@keyframes progressiveReveal {
+	0% { transform: scale(1.05); opacity: 0; }
+	100% { transform: scale(1); opacity: 1; }
+}
+
+.bot_navbar {
+  font-family: 'EB Garamond', serif;
+  overflow: hidden;
+  background-color: rgba(0,0,0,0);
+  position: relative; /* Set the navbar to fixed position */
+  bottom: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.bot_navbar a {
+  float: right;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.bot_navbar a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+::selection {
+  color: #fffff8;
+  background: rgba(0, 0, 0, 0.85);
+}
